@@ -25,11 +25,11 @@ spec:
             - name: PROVISIONER_NAME
               value: example.com/nfs
             - name: NFS_SERVER
-              value: <<NFS Server IP>>
+              value: 35.235.103.123
             - name: NFS_PATH
-              value: /srv/nfs/kubedata
+              value: /agunubackup/agunubackup4/
       volumes:
         - name: nfs-client-root
           nfs:
-            server: <<NFS Server IP>>
-            path: /srv/nfs/kubedata
+            server: 35.235.103.123
+            path: /agunubackup/agunubackup4

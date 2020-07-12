@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: busybox
+  name: busybox2
 spec:
   volumes:
   - name: host-volume
     persistentVolumeClaim:
-      claimName: pvc-hostpath
+      claimName: pvc-nfs-pv2
   containers:
   - image: busybox
     name: busybox
